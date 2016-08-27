@@ -1,46 +1,65 @@
-<div class="row vertical-center">
-    <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
-    <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
-        <div class="container loginInnerContainer col-xs-12 col-sm-12 col-md-3 col-lg-3" style="width: 100%">
-            <div class="row">
-                <div class="col-xs-0 col-sm-0 col-md-3 col-lg-3"></div>
-                <div class="col-xs-12 col-sm-12 col-md-6 col-xs-6" style="text-align: center; padding-bottom: 10px">
-                    <h2>LOGIN</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <% include partials/head-partial %>
+</head>
+
+<!-------------------- NAV BAR ------------------------->
+<header>
+    <% include partials/navbar-partial %>
+</header>
+
+
+<body>
+<div class="container-fluid">
+    <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3"></div>
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+
+        <div class="row vertical-center">
+            <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
+            <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+                <div class="container loginInnerContainer col-xs-12 col-sm-12 col-md-3 col-lg-3" style="width: 100%">
+                    <div class="row">
+                        <div class="col-xs-0 col-sm-0 col-md-3 col-lg-3"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-xs-6" style="text-align: center; padding-bottom: 10px">
+                            <h2>LOGIN</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 loginHeader">
+                            <label class="loginLabel">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10 loginHeader">
+                            <input type="email" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 loginHeader">
+                            <label class="loginLabel">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10 loginHeader">
+                            <input type="password" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-4"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-4" style="padding-bottom:10px;padding-top:10px; text-align: center">
+                            <a href="/" role="button" class="btn btn-default">Login</a>
+                        </div>
+                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    </div>
                 </div>
             </div>
-            <%= form_for(:session, url: login_path) do |f| %>
-            <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 loginHeader">
-                    <%= f.label :email, "Email", class: "control-label loginLabel" %>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1"></div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10 loginHeader">
-                    <%= f.email_field :email, :placeholder => "Email" , class: "form-control loginField"%>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 loginHeader">
-                    <%= f.label :email, "Password", class: "control-label loginLabel"%>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1"></div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-10 loginHeader">
-                    <%= f.password_field :password, :placeholder => "Password" , class: "form-control loginField"%>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-4"></div>
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-4" style="padding-bottom:10px;padding-top:10px; text-align: center">
-                    <%= f.submit "Login", class: "btn btn-default btn-primary"%>
-                </div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
-            </div>
-            <% end %>       <!-- FORM ENDS HERE -->
         </div>
     </div>
 </div>
+</body>
+</html>

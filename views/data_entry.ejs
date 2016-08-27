@@ -14,7 +14,20 @@
 <div class="container-fluid">
     <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3"></div>
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
-        <% include partials/fluids-partial %>
+        <form action="#" class="regform" method="get">
+            <fieldset id="first">
+                <% include partials/personal-partial %>
+            </fieldset>
+            <fieldset id="second">
+                <% include partials/fluids-partial %>
+            </fieldset>
+            <fieldset id="third">
+                <% include partials/machinery-partial %>
+            </fieldset>
+            <fieldset id="fourth">
+                <% include partials/summary-partial %>
+            </fieldset>
+        </form>
     </div>
 </div>
 </body>

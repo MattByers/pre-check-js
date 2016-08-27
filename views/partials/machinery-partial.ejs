@@ -1,26 +1,23 @@
-<div class="container-fluid dataEntryText">
+<div class="container-fluid middleInnerContainer">
     <h1 style="text-align: center">Machinery</h1>
     <!------ BREAD CRUMB STARTS -------->
-    <ul class="breadcrumb" style="text-align: center; background-color: transparent">
-        <li><a href="/data_entry">Personal</a></li>
-        <li><a href="/fluids_data_entry">Fluids</a></li>
-        <li class="active">Machinery</li>
-        <li><a href="summary_data_entry">Summary</a></li>
+    <ul class="breadcrumb progressbar" style="text-align: center; background-color: transparent">
+        <li>Personal</li>
+        <li>Fluids</li>
+        <li style="color:white">Machinery</li>
+        <li>Summary</li>
     </ul>
-    <!------ ITEM 1 STARTS ------>
-    <%= form_for(:session, url: login_path) do |f| %>
-
 
     <!-------------- FAULTS LABEL --------------->
     <div class="col-md-12" style="text-align: center; margin-top: 10px; margin-bottom: 5px">
-        <%= f.label :first_name, "Faults",class: "loginLabel" %>
+        <label class="loginLabel">Faults</label>
     </div>
     <!---------------- ITEM 1 ---------------->
     <div class="row" style="margin-top:10px">
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Auto Grease/Greased"%>
+                <label class="loginLabel">Auto Grease/Greased</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -34,7 +31,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Wheels/Tracks/Wheel Nuts/Spockets"%>
+                <label class="loginLabel">Wheels/Tracks/Wheel Nuts/Spockets</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -48,7 +45,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Quick Hitch"%>
+                <label class="loginLabel">Quick Hitch</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -62,7 +59,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Drained Air Tanks"%>
+                <label class="loginLabel">Drained Air Tanks</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -76,7 +73,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Paint Panel Damage"%>
+                <label class="loginLabel">Paint Panel Damage</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -90,7 +87,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Ground Engaging Tools"%>
+                <label class="loginLabel">Ground Engaging Tools</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -104,7 +101,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Chains/Strops Tagged/Onboard"%>
+                <label class="loginLabel">Chains/Strops Tagged/Onboard</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -118,7 +115,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Hydraulic Hoses"%>
+                <label class="loginLabel">Hydraulic Hoses</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -132,7 +129,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Lights and Hazards"%>
+                <label class="loginLabel">Lights and Hazards</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -146,7 +143,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Fire Extinguisher"%>
+                <label class="loginLabel">Fire Extinguisher</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -160,7 +157,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Emergency Bowl Drop"%>
+                <label class="loginLabel">Emergency Bowl Drop</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -174,7 +171,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Safety Systems"%>
+                <label class="loginLabel">Safety Systems</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -188,7 +185,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Gauges"%>
+                <label class="loginLabel">Gauges</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -202,7 +199,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Mirrors, Windows, Camera"%>
+                <label class="loginLabel">Mirrors, Windows, Camera</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -216,7 +213,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "GPS Callibration/Blade Wear"%>
+                <label class="loginLabel">GPS Callibration/Blade Wear</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -230,7 +227,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Park Brake/Foot Brake"%>
+                <label class="loginLabel">Park Brake/Foot Brake</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -244,7 +241,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "Cab Tidy"%>
+                <label class="loginLabel">Cab Tidy</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -257,7 +254,7 @@
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
             <div class="form-group has-success has-feedback">
-                <%= f.label :first_name, "WOF/Rego/RUC"%>
+                <label class="loginLabel">WOF/Rego/RUC</label>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
@@ -265,17 +262,12 @@
             <button type="button" class="btn btn-default">Required</button>
         </div>
     </div>
-    <!------ SUBMIT BUTTON DUNNO HERE TO USE IT YET --------->
-    <!--<div class="actions">-->
-    <!--<%= f.submit %>-->
-    <!--</div>-->
-    <% end %>
 
     <!----- NAV BUTTONS ------->
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-left: 0px">
-        <a href="/fluids_data_entry" role="button" class="btn btn-default">< Back</a>
+        <input class="btn btn-default" onclick="prev_step2()" type="button" value="< Back">
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-right: 0px; text-align: right">
-        <a href="/summary_data_entry" role="button" class="btn btn-default">Next ></a>
+        <input class="btn btn-default" onclick="next_step3()" type="button" value="Next >">
     </div>
 </div>

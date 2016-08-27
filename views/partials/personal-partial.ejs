@@ -2,25 +2,49 @@
     <h1 style="text-align: center">Personal</h1>
     <!------ BREAD CRUMB STARTS -------->
     <ul class="breadcrumb" style="text-align: center; background-color: transparent">
-        <li class="active">Personal</li>
-        <li><a href="/fluids_data_entry">Fluids</a></li>
-        <li><a href="/machinery_data_entry">Machinery</a></li>
-        <li><a href="summary_data_entry">Summary</a></li>
+        <li style="color:white">Personal</li>
+        <li>Fluids</li>
+        <li>Machinery</li>
+        <li>Summary</li>
     </ul>
     <!------ ITEM 1 STARTS ------>
-    <div class="form-inputs">
 
-        <div class="form-group has-success has-feedback">
-            <label class="loginLabel">Machine No.</label>
-            <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-        </div>
+    <label class="loginLabel">Machine No.</label>
+    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </br>
 
-        <div class="form-group has-success has-feedback">
-            <label class="loginLabel">Machine No.</label>
-            <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-        </div>
+    <label class="loginLabel">Date</label>
+    <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </br>
 
-    </div>
+    <label class="loginLabel">Site No.</label>
+    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </br>
+
+    <label class="loginLabel">Site Location</label>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </br>
+
+    <label class="loginLabel">Operator</label>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </br>
+
+    <label class="loginLabel">Hr Clock Start</label>
+    <input type="time" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </br>
+
+    <label class="loginLabel">Hr Clock Finish</label>
+    <input type="time" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </br>
+
+    <label class="loginLabel">Hubo</label>
+    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </br>
+
+    <label class="loginLabel">Odometer</label>
+    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </br>
+
 
     <div class="container-fluid">
         <div class="row">
@@ -28,7 +52,7 @@
                 <a href="/" role="button" class="btn btn-default">Cancel</a>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-right: 0px; text-align: right">
-                <a href="/fluids_data_entry" role="button" class="btn btn-default">Next ></a>
+                <input class="btn btn-default" onclick="next_step1()" type="button" value="Next >">
             </div>
         </div>
     </div>
