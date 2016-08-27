@@ -1,0 +1,15 @@
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="col-xs-6">
+        <div class="navbar-header" style="padding-left: 20px">
+            <a class="navbar-brand" href="/">Pre-Checker</a>
+        </div>
+    </div>
+    <div class="col-xs-3"></div>
+    <div class="col-xs-2">
+        <ul class="nav navbar-nav navbar-right" style="padding-right: 20px">
+            <% if current_user %>
+            <li><%= link_to 'Logout', '/logout' %></li>
+            <% end %>
+        </ul>
+    </div>
+</nav>

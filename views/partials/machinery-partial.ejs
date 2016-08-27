@@ -1,0 +1,281 @@
+<div class="container-fluid dataEntryText">
+    <h1 style="text-align: center">Machinery</h1>
+    <!------ BREAD CRUMB STARTS -------->
+    <ul class="breadcrumb" style="text-align: center; background-color: transparent">
+        <li><a href="/data_entry">Personal</a></li>
+        <li><a href="/fluids_data_entry">Fluids</a></li>
+        <li class="active">Machinery</li>
+        <li><a href="summary_data_entry">Summary</a></li>
+    </ul>
+    <!------ ITEM 1 STARTS ------>
+    <%= form_for(:session, url: login_path) do |f| %>
+
+
+    <!-------------- FAULTS LABEL --------------->
+    <div class="col-md-12" style="text-align: center; margin-top: 10px; margin-bottom: 5px">
+        <%= f.label :first_name, "Faults",class: "loginLabel" %>
+    </div>
+    <!---------------- ITEM 1 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Auto Grease/Greased"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 2 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Wheels/Tracks/Wheel Nuts/Spockets"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 3 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Quick Hitch"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 4 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Drained Air Tanks"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 5 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Paint Panel Damage"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 6 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Ground Engaging Tools"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 7 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Chains/Strops Tagged/Onboard"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">Yes</button>
+            <button type="button" class="btn btn-default">No</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 8 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Hydraulic Hoses"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 9 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Lights and Hazards"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 10 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Fire Extinguisher"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 11 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Emergency Bowl Drop"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 12 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Safety Systems"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 13 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Gauges"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 14 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Mirrors, Windows, Camera"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 15 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "GPS Callibration/Blade Wear"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 16 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Park Brake/Foot Brake"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Fault</button>
+            <button type="button" class="btn btn-default">NA</button>
+        </div>
+    </div>
+    <!---------------- ITEM 17 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "Cab Tidy"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">Yes</button>
+            <button type="button" class="btn btn-default">No</button>
+        </div>
+    </div>
+    <!---------------- ITEM 18 ---------------->
+    <div class="row" style="margin-top:10px">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="text-align: right">
+            <div class="form-group has-success has-feedback">
+                <%= f.label :first_name, "WOF/Rego/RUC"%>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 btn-group" role="group">
+            <button type="button" class="btn btn-default">OK</button>
+            <button type="button" class="btn btn-default">Required</button>
+        </div>
+    </div>
+    <!------ SUBMIT BUTTON DUNNO HERE TO USE IT YET --------->
+    <!--<div class="actions">-->
+    <!--<%= f.submit %>-->
+    <!--</div>-->
+    <% end %>
+
+    <!----- NAV BUTTONS ------->
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-left: 0px">
+        <a href="/fluids_data_entry" role="button" class="btn btn-default">< Back</a>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-right: 0px; text-align: right">
+        <a href="/summary_data_entry" role="button" class="btn btn-default">Next ></a>
+    </div>
+</div>

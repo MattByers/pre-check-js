@@ -1,8 +1,102 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("background_image.png");
 }
 
 a {
   color: #00B7FF;
+}
+
+.listType {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  background-color: #202020;
+  text-align: center;
+  border-radius: 0px 8px 8px 0px;
+  border: 2px solid #494949;
+  border-left: none;
+}
+
+.listType a {
+  display: block;
+  color: #999999;
+  padding: 25px 16px;
+  text-decoration: none;
+  border-radius: 0px 20px 20px 0px;
+
+}
+
+/* Change the link color on hover */
+.listType a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.loginInnerContainer{
+  background-color: #666666;
+  border: 2px solid #e3e3e3;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+.loginLabel{
+  padding-top: 4px;
+  text-align: center;
+}
+
+.loginHeader{
+  text-align: center;
+}
+
+.loginField{
+  margin-bottom:10px;
+  width: 100%;
+  text-align: center;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.adminInnerContainer{
+  padding:5px 5px 5px 5px;
+  border: 2px solid #494949;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #202020;
+}
+
+.dataEntryText{
+  color: #847a84;
+}
+
+.machineryEntryHeader{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.machineryEntryField{
+  text-align: center;
+  display: inline-block;
+}
+/* Used for overriding arrows on number fields */
+form input[type='number']::-webkit-outer-spin-button,
+form input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.machineryEntryRows{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

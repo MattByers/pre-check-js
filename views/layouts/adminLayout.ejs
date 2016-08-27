@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PreCheck</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<!--------------------------------------- NAV BAR STARTS -------------------------------------------->
+
+<%= render partial: "layouts/partials/navbar" %>
+
+<!--------------------------------------- NAV BAR ENDS -------------------------------------------->
+
+
+<!--------------------------------------- SIDE NAV BAR STARS -------------------------------------------->
+<div class="col-xs-12 col-sm-12 col-md-2 col-lg-1" style="padding: 0px 0px 0px 0px;">
+    <%= render partial: "layouts/partials/sidebar" %>
+
+    <!--------------------------------------- SIDE NAV BAR ENDS -------------------------------------------->
+    <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1"></div>
+    <!--------------------------------------- PAGE CONTENT STARTS-------------------------------------------->
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 adminInnerContainer">
+        <%= yield %>
+    </div>
+    <!--------------------------------------- PAGE CONTENT ENDS -------------------------------------------->
+</div>
+</body>
+</html>
