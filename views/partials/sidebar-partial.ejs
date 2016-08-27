@@ -1,75 +1,10 @@
-<div class="container-fluid dataEntryText">
-    <h1 style="text-align: center">Personal</h1>
-    <!------ BREAD CRUMB STARTS -------->
-    <ul class="breadcrumb" style="text-align: center; background-color: transparent">
-        <li class="active">Personal</li>
-        <li><a href="/fluids_data_entry">Fluids</a></li>
-        <li><a href="/machinery_data_entry">Machinery</a></li>
-        <li><a href="summary_data_entry">Summary</a></li>
-    </ul>
-    <!------ ITEM 1 STARTS ------>
-    <%= form_for(:session, url: login_path) do |f| %>
-    <div class="form-inputs">
-
-        <div class="form-group has-success has-feedback">
-            <%= f.label :first_name, "Machine No.",class: "loginLabel" %>
-            <%= f.number_field(:first_name, class: "form-control") %>
-        </div>
-
-        <div class="form-group has-success has-feedback">
-            <%= f.label :first_name, "Date",class: "loginLabel" %>
-            <%= f.date_field(:last_name, class: "form-control") %>
-        </div>
-
-        <div class="form-group has-success has-feedback">
-            <%= f.label :first_name, "Site No.",class: "loginLabel" %>
-            <%= f.number_field(:email, class: "form-control") %>
-        </div>
-
-        <div class="form-group has-success has-feedback">
-            <%= f.label :first_name, "Site Location",class: "loginLabel" %>
-            <%= f.text_field(:last_name, class: "form-control") %>
-        </div>
-
-        <div class="form-group has-success has-feedback">
-            <%= f.label :first_name, "Operator",class: "loginLabel" %>
-            <%= f.text_field(:last_name, class: "form-control") %>
-        </div>
-
-        <div class="form-group has-success has-feedback">
-            <%= f.label :first_name, "Hr Clock Start",class: "loginLabel" %>
-            <%= f.time_field(:last_name, class: "form-control") %>
-        </div>
-
-        <div class="form-group has-success has-feedback">
-            <%= f.label :first_name, "Hr Clock Finish",class: "loginLabel" %>
-            <%= f.time_field(:last_name, class: "form-control") %>
-        </div>
-
-        <div class="form-group has-success has-feedback">
-            <%= f.label :first_name, "Hubo",class: "loginLabel" %>
-            <%= f.text_field(:last_name, class: "form-control") %>
-        </div>
-
-        <div class="form-group has-success has-feedback">
-            <%= f.label :first_name, "Odometer",class: "loginLabel" %>
-            <%= f.number_field(:last_name, class: "form-control") %>
-        </div>
-    </div>
-    <!------ SUBMIT BUTTON DUNNO HERE TO USE IT YET --------->
-    <!--<div class="actions">-->
-    <!--<%= f.submit %>-->
-    <!--</div>-->
-    <% end %>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-left: 0px">
-                <a href="/" role="button" class="btn btn-default">Cancel</a>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-right: 0px; text-align: right">
-                <a href="/fluids_data_entry" role="button" class="btn btn-default">Next ></a>
-            </div>
-        </div>
-    </div>
-
-</div>
+<ul class="listType">
+    <li><a href="/">Home</a></li>
+    <li><a href="/">Register</a></li>
+    <li><a href="/">Login</a></li>
+    <li><a href="/">Items</a></li>
+    <li><a href="/data_entry">Personal</a></li>
+    <li><a href="/">Fluids</a></li>
+    <li><a href="/">Machinery</a></li>
+    <li><a href="/">Logout</a></li>
+</ul>

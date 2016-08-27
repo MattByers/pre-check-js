@@ -1,7 +1,5 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url("background_image.png");
+  background-image: url("../images/background_image.png");
 }
 
 a {
@@ -33,6 +31,7 @@ a {
 .listType a:hover {
   background-color: #555;
   color: white;
+  text-decoration: none;
 }
 
 .loginInnerContainer{
@@ -67,17 +66,14 @@ a {
   align-items: center;
 }
 
-.adminInnerContainer{
+.middleInnerContainer{
   padding:5px 5px 5px 5px;
   border: 2px solid #494949;
+  color: #847a84;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   background-color: #202020;
-}
-
-.dataEntryText{
-  color: #847a84;
 }
 
 .machineryEntryHeader{
